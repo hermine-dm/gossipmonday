@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Mon super site de gossip, depuis le dossier views !</h1>
+
+    <a href="/gossips/new/">créer un gossip ?</a>
+
+     <!--<% gossips.each_with_index do |gossip, i| %> % sert à excetuer du ruby dans du html 
+    <p>
+			L'auteur: <%= gossip.author %> <br/>
+      Le contenu: <%= gossip.content %> <br/>
+      Le lien : <a href="/gossips/<%= (i+1) %>"> ici </a> <br/> !--% index commence à 0 d'où le 1 
+      Le lien pour éditer: <a href="/gossips/<%= (i+1) %>/edit"> et là </a> 
+    </p>
+      <% end %> -->
+
+    <% for i in 1...gossips.size %> <!--% sert à excetuer du ruby dans du html -->
+    <p>
+      L'auteur: <%= gossips[i].author %> <br/>
+      Le contenu: <%= gossips[i].content %> <br/>
+      Le lien : <a href="/gossips/<%= (i) %>"> ici </a> <br/> <!--% index commence à 0 d'où le 1 -->
+      Le lien pour éditer: <a href="/gossips/<%= (i) %>/edit"> et là </a> 
+    </p>
+    <% end %>
+
+  </body>
+</html>

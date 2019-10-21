@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Edit un potin</title>
+  </head>
+  <body>
+    <h1>Voici la page du potin n°<%= params_gossip[2] %> à éditer</h1>
+    <p>
+    Actuellement l'auteur est : <%= params_gossip[0] %> <br/>
+    Actuellement le contenu est: <%= params_gossip[1] %> 
+    </p>
+    <h1>Allez éditons !</h1>
+    <p>
+    <form action='/gossips/<%= params["id"] %>/edit' method='POST'>
+      Saisi ici le nouvel auteur :  <input type='text' name='gossip_author'/><br/>
+      Balance ton potin modifié : <input type='text' name='gossip_content'/><br/>
+      <input type='submit'/>
+    </form>
+
+    <a href="/">revenir à la page d'acceuil</a>
+
+  </body>
+</html>
