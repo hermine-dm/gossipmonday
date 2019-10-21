@@ -1,5 +1,7 @@
 # SINATRA OOOOH yeah !!
 
+### pour débuter : bundle install - lancer la commande shotgun -p 4567 et aller sur http://localhost:4567/
+
 ## Nouveau gossip  
 
 Cela initialisait le fichier avec le premier gossip  
